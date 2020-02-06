@@ -38,7 +38,7 @@
 	<wsdl:service name="BookService">
 		<wsdl:port name="BookServicePort" binding="tns:BookServiceSOAPBinding">
 			<soap:address
-				location="http://localhost:8081/Desafio/services/BookService" />
+				location="http://localhost:8080/Embedded/Desafio/services/BookService" />
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
