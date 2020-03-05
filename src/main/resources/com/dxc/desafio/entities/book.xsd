@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-	targetNamespace="http://benchresources.in/entities/Book" xmlns:tns="http://benchresources.in/entities/Book"
-	elementFormDefault="qualified">
+			targetNamespace="http://benchresources.in/entities/Book" xmlns:tns="http://benchresources.in/entities/Book"
+			elementFormDefault="qualified">
 
 	<!-- Book Request Type -->
 	<xsd:element name="BookRequestType">
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="isbnNumber" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!-- Book Request Type 2 for book name -->
+	<xsd:element name="BookNameRequestType">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="bookName" type="xsd:string" />
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>

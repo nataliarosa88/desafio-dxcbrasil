@@ -19,9 +19,9 @@
 		<sun.jaxws.version>2.2.8</sun.jaxws.version>
 		<metro.jaxws.version>2.3</metro.jaxws.version>
 		<jaxws.scope>compile</jaxws.scope> 
-		<compileSource>1.7</compileSource>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
+		<compileSource>1.8</compileSource>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	
@@ -43,23 +43,26 @@
 	</repositories>
 
 	<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.sun.xml.ws</groupId>
 			<artifactId>jaxws-rt</artifactId>
-			<version>${sun.jaxws.version}</version>
-			<scope>${jaxws.scope}</scope>
+			<version>2.2.8</version>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.glassfish.metro</groupId>
 			<artifactId>webservices-rt</artifactId>
-			<version>${metro.jaxws.version}</version>
-			<scope>${jaxws.scope}</scope>
+			<version>2.3</version>
+			<scope>compile</scope>
 		</dependency>
 
 		<dependency>
@@ -86,8 +89,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
